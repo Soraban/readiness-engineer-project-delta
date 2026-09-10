@@ -4,8 +4,8 @@
 
 You'll build a small production-grade system: it prepares tax forms (1099s) in bulk for accounting firms and files them with the IRS.
 
-- Stack: Ruby on Rails is what we run day to day, so there's a slight preference for it — but strong backend engineering in the stack you know best is what matters. Database and job backend are your call.
-- Deliverables: a new GitHub repo shared with @seanmcoleman, a short video walkthrough, and a write-up. We run everything locally — no deployment.
+- Stack: Ruby on Rails is what we run day to day, so there's a slight preference for it — but strong backend engineering in the stack you know best is what matters. Database and backend choices are your call.
+- Deliverables: a new GitHub repo shared with @seanmcoleman, a short video walkthrough, and a write-up. We run everything locally — no deployment necessary.
 - Make reasonable assumptions and document decisions.
 
 ## Why this problem
@@ -18,7 +18,7 @@ Discovery Engineers own figuring out what to ship: they work with product to tur
 
 Readiness Engineers own making it real: the architecture, data models, performance, security, and failure recovery that turn a validated prototype into something every firm can rely on during tax season.
 
-Discovery answers "should we build this?"; Readiness answers "will this hold up?" This project is for the Readiness Engineer role. It's a compressed version of that job: the hard part isn't the features, it's making them correct under failure.
+Discovery answers "what should we build? should we build this?"; Readiness answers "will this hold up to production scale and not introduce vulnerabilities" This project is for the Readiness Engineer role. It's a compressed version of that job: the hard part isn't figuring out what to build, it's working with Discovery engineers to take their product prototypes, designs, incomplete functionality, sometimes rough ideas and finish building them out so they're production-ready.
 
 ## The problem
 
@@ -97,7 +97,7 @@ A full determination pass across the entire provided dataset should complete in 
 
 ### Part 3 — Transmission (the heart of this project)
 
-Filings go to the IRS in batches. There's no IRS sandbox, so you'll build a stub that behaves like production. The stub itself is small and isn't what we're evaluating — how your system behaves against it is.
+Filings go to the IRS in batches. There's no IRS sandbox, so you'll build a stub that behaves like production (just the minimum to test against it). 
 
 Your stub's behavior:
 
@@ -145,4 +145,4 @@ Don't build these. Some appear in the write-up instead.
 
 ## On AI tools
 
-Use whatever you'd use on the job, including AI — that's how we work. But anything you ship, you own: we'll ask you to extend it, in detail, in a later conversation.
+Use the best tools you'd use for work, including AI. But anything you ship, you own: we'll ask you to extend it, in detail, in a later conversation.
